@@ -21,7 +21,7 @@ efecto_fondo = gradiente
 
 # URL del mapa de Google Maps (iframe embed)
 # Para obtenerla: Google Maps → Compartir → Incorporar mapa → copiar la URL del src
-mapa_url = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.1234567890!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0MicxMy42Ilc!5e0!3m2!1ses!2ses!4v1234567890
+mapa_url = https://www.google.com/maps/place/Jumeirah+Burj+Al+Arab/@25.0762805,54.8978412,10z/data=!4m8!1m2!2m1!1sHotels!3m4!1s0x3e5f6a576414cf2d:0xb3da71b879f0e038!8m2!3d25.141191!4d55.185247?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D
 
 # Redes sociales (dejar vacío si no se tiene)
 facebook =
