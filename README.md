@@ -13,6 +13,7 @@ Esta es la web de tu gimnasio. Todo el contenido se modifica editando archivos s
 | `ubicacion.txt` | Sección "Dónde Estamos" |
 | `contacto.txt` | Sección "Contacto" |
 | `tarifas.csv` | Tabla de precios |
+| `fotos.txt` | Lista de fotos de la galería (una por línea) |
 | `fotos/` | Carpeta de imágenes de la galería |
 
 ---
@@ -96,22 +97,36 @@ Las líneas que empiezan con `#` son comentarios y se ignoran.
 
 ---
 
-## Cómo subir fotos a la galería
+## Cómo gestionar las fotos de la galería
+
+### Subir fotos
 
 1. Ve a la carpeta `contenido/fotos/` en tu repositorio
 2. Haz clic en **"Add file" → "Upload files"**
 3. Arrastra las fotos o haz clic para seleccionarlas
 4. Haz clic en **"Commit changes"**
-5. GitHub generará automáticamente el listado de fotos (espera 1-2 minutos)
+
+### Añadir fotos a la galería
+
+Subir la foto a la carpeta no es suficiente. Hay que añadir el nombre al listado:
+
+1. Abre el archivo `contenido/fotos.txt`
+2. Escribe el nombre exacto del archivo de la foto (una foto por línea)
+3. El orden de las líneas es el orden en que aparecen en la galería
+4. Haz clic en **"Commit changes"**
+
+Ejemplo de `fotos.txt`:
+```
+sala-musculacion.jpg
+zona-cardio.jpg
+clase-spinning.jpg
+```
+
+### Quitar una foto de la galería
+
+Borra su línea de `contenido/fotos.txt`. Si también quieres borrar el archivo de imagen, ve a `contenido/fotos/` y elimínalo.
 
 **Formatos admitidos:** `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`
-
-### Cómo quitar una foto
-
-1. Ve a `contenido/fotos/`
-2. Haz clic en la foto que quieres eliminar
-3. Haz clic en el icono de la papelera (borrar)
-4. Confirma con **"Commit changes"**
 
 ---
 
@@ -130,7 +145,4 @@ Puedes usar una web como [HTML Color Picker](https://www.w3schools.com/colors/co
 - `index.html`
 - `css/estilos.css`
 - `js/app.js`
-- `.github/workflows/generar-fotos.yml`
-- `contenido/fotos/manifest.json` (se genera automáticamente)
-
-Solo edita los archivos dentro de `contenido/` (excepto `manifest.json`).
+Solo edita los archivos dentro de `contenido/`.

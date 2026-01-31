@@ -346,8 +346,11 @@
                         .then(function (t) { renderizarTarifas(parsearCSV(t)); })
                         .catch(function () { mostrarError('tarifas-contenido', 'Tarifas no disponibles'); }),
 
-                    cargarJSON('contenido/fotos/manifest.json')
-                        .then(function (fotos) { renderizarGaleria(fotos); })
+                    cargarArchivo('contenido/fotos.txt')
+                        .then(function (t) {
+                            var fotos = t.split('\n').map(function (l) { return l.trim(); }).filter(function (l) { return l.length > 0; });
+                            renderizarGaleria(fotos);
+                        })
                         .catch(function () { /* Galería vacía, no hacer nada */ })
                 ];
 
