@@ -24,8 +24,8 @@ efecto_fondo = gradiente
 mapa_url = https://www.google.com/maps/place/Jumeirah+Burj+Al+Arab/@25.0762805,54.8978412,10z/data=!4m8!1m2!2m1!1sHotels!3m4!1s0x3e5f6a576414cf2d:0xb3da71b879f0e038!8m2!3d25.141191!4d55.185247?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D
 
 # Redes sociales (dejar vacío si no se tiene)
-facebook =
-instagram =
+facebook = https://www.instagram.com/reel/DCNHTIqOnpL/
+instagram = https://www.instagram.com/reel/DCNHTIqOnpL/
 
 # Datos de contacto
 telefono = +34 600 123 456
