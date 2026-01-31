@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav id="navegacion">
+        <div class="nav-contenedor">
+            <a href="#inicio" class="nav-logo" id="nav-logo">Gimnasio</a>
+            <button class="nav-hamburguesa" id="btn-menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-enlaces" id="nav-enlaces">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Quiénes Somos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#tarifas">Tarifas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabecera Hero -->
+    <header id="inicio" class="hero">
+        <div class="hero-contenido">
+            <h1 id="hero-titulo">Gimnasio</h1>
+            <p id="hero-subtitulo">Cargando...</p>
+        </div>
+    </header>
+
+    <!-- Quiénes Somos -->
+    <section id="sobre-nosotros" class="seccion">
+        <div class="contenedor">
+            <h2 id="sobre-nosotros-titulo">Quiénes Somos</h2>
+            <div id="sobre-nosotros-contenido" class="texto-contenido">
+                <p>Cargando contenido...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="seccion seccion-alt">
+        <div class="contenedor">
+            <h2>Galería</h2>
+            <div id="galeria-grid" class="galeria-grid">
+                <p class="galeria-vacia">No hay fotos disponibles. Sube imágenes a la carpeta <code>contenido/fotos/</code>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de fotos">
+        <button class="lightbox-cerrar" id="lightbox-cerrar" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-anterior" id="lightbox-anterior" aria-label="Foto anterior">&#10094;</button>
+        <img id="lightbox-img" src="" alt="Foto ampliada">
+        <button class="lightbox-siguiente" id="lightbox-siguiente" aria-label="Foto siguiente">&#10095;</button>
+    </div>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="seccion">
+        <div class="contenedor">
+            <h2 id="ubicacion-titulo">Dónde Estamos</h2>
+            <div class="ubicacion-contenedor">
+                <div id="ubicacion-contenido" class="texto-contenido">
+                    <p>Cargando contenido...</p>
+                </div>
+                <div class="mapa-contenedor">
+                    <iframe id="mapa-iframe" src="" frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifas -->
+    <section id="tarifas" class="seccion seccion-alt">
+        <div class="contenedor">
+            <h2>Tarifas</h2>
+            <div id="tarifas-contenido">
+                <p>Cargando tarifas...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion">
+        <div class="contenedor">
+            <h2 id="contacto-titulo">Contacto</h2>
+            <div class="contacto-contenedor">
+                <div id="contacto-contenido" class="texto-contenido">
+                    <p>Cargando contenido...</p>
+                </div>
+                <div id="contacto-datos" class="contacto-datos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="pie">
+        <div class="contenedor pie-contenido">
+            <p id="pie-texto">&copy; 2025 Gimnasio. Todos los derechos reservados.</p>
+            <div id="pie-redes" class="pie-redes"></div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
